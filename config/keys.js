@@ -1,6 +1,6 @@
 module.exports = {
   DB:
-    "mongodb+srv://mcdan:<password>@mcdancluster0-pnqeg.mongodb.net/test?retryWrites=true",
+    "mongodb+srv://mcdan:LVsJ6m7IR4a9OU8T@mcdancluster0-pnqeg.mongodb.net/test?retryWrites=true",
   secretOrKey: "secret",
   config: {
     cloudinaryConfig: {

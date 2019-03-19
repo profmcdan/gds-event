@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(formData.parse());
 app.use(cors());
 
-// const usersRoute = require("./routes/user");
+const usersRoute = require("./routes/user");
 // const bidsRoute = require("./routes/bid");
 // const contractorRoute = require("./routes/contractor");
 // const decisionRoute = require("./routes/decision");
