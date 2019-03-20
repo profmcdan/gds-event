@@ -14,12 +14,7 @@ class Home extends Component {
           <div className="home-carousel">
             <Carousel>
               <Carousel.Item>
-                <img
-                  className="d-block nav-img"
-                  height="600px"
-                  src={img1}
-                  alt="First slide"
-                />
+                <img className="d-block nav-img" src={img1} alt="First slide" />
                 <Carousel.Caption>
                   <h3>First slide label</h3>
                   <p>
@@ -28,12 +23,7 @@ class Home extends Component {
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img
-                  className="d-block nav-img"
-                  height="600px"
-                  src={img2}
-                  alt="Third slide"
-                />
+                <img className="d-block nav-img" src={img2} alt="Third slide" />
 
                 <Carousel.Caption>
                   <h3>Second slide label</h3>
@@ -43,12 +33,7 @@ class Home extends Component {
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img
-                  className="d-block nav-img"
-                  height="600px"
-                  src={img3}
-                  alt="Third slide"
-                />
+                <img className="d-block nav-img" src={img3} alt="Third slide" />
 
                 <Carousel.Caption>
                   <h3>Third slide label</h3>
@@ -59,12 +44,7 @@ class Home extends Component {
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img
-                  className="d-block nav-img"
-                  height="600px"
-                  src={img2}
-                  alt="Third slide"
-                />
+                <img className="d-block nav-img" src={img2} alt="Third slide" />
 
                 <Carousel.Caption>
                   <h3>Fourth slide label</h3>
@@ -76,7 +56,6 @@ class Home extends Component {
               <Carousel.Item>
                 <img
                   className="d-block nav-img"
-                  height="600px"
                   src={img4}
                   alt="Fourth slide"
                 />
@@ -90,12 +69,7 @@ class Home extends Component {
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img
-                  className="d-block nav-img"
-                  height="600px"
-                  src={img5}
-                  alt="Third slide"
-                />
+                <img className="d-block nav-img" src={img5} alt="Third slide" />
 
                 <Carousel.Caption>
                   <h3>Sixth slide label</h3>
@@ -105,12 +79,7 @@ class Home extends Component {
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img
-                  className="d-block nav-img"
-                  height="600px"
-                  src={img3}
-                  alt="Fifth slide"
-                />
+                <img className="d-block nav-img" src={img3} alt="Fifth slide" />
 
                 <Carousel.Caption>
                   <h3>Seventh slide label</h3>
