@@ -1,18 +1,16 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import NavBar from "./components/Common/Navbar";
+import Footer from "./components/Common/Footer";
+import Home from "./components/Home/Home";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>Loading.</p>
-          <a className="App-link" href="#!" rel="noopener noreferrer">
-            GDS-EVENT
-          </a>
-        </header>
+      <div className="">
+        <NavBar />
+        <Home />
+        <Footer />
       </div>
     );
   }

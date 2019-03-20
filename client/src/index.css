@@ -7,6 +7,64 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.main-nav {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5px;
+  left: 20%;
+  right: 20%;
+}
+
+.nav-search {
+  right: 0px;
+  justify-content: right;
+}
+
+.home-carousel {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10px;
+  width: 80%;
+  height: 600px;
+  position: relative;
+}
+.nav-img {
+  width: 100%;
+}
+
+.intro {
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: center;
+  text-justify: auto;
+  left: 20%;
+  right: 20%;
+}
+
+.about {
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 5%;
+  align-content: center;
+  justify-content: center;
+  font-size: 14;
+}
+
+.footer-nav {
+  height: 30px;
+  padding-right: 10%;
+  padding-left: 10%;
+  bottom: 0px;
+  /* background-color: cadetblue; */
+}
+
+.footer-text {
+  text-align: center;
+  align-content: center;
+  font-size: 16px;
+  font-weight: bold;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
