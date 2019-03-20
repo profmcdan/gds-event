@@ -10,8 +10,8 @@ class Home extends Component {
   render() {
     return (
       <Container fluid>
-        <Row className="">
-          <div className="home-carousel">
+        <Row className="md-12">
+          <div className="home-carousel md-12">
             <Carousel>
               <Carousel.Item>
                 <img className="d-block nav-img" src={img1} alt="First slide" />
