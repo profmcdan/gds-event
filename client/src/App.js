@@ -1,17 +1,18 @@
 import React, { Component } from "react";
+import { Container } from "semantic-ui-react";
 import "./App.css";
-import NavBar from "./components/Common/Navbar";
 import Footer from "./components/Common/Footer";
 import Home from "./components/Home/Home";
+import NavigationBar from "./components/Common/NavigationBar";
 
 class App extends Component {
   render() {
     return (
-      <div className="">
-        <NavBar />
+      <Container fluid>
+        <NavigationBar />
         <Home />
         <Footer />
-      </div>
+      </Container>
     );
   }
 }

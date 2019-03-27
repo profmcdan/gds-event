@@ -5,30 +5,58 @@ class About extends Component {
     return (
       <div>
         <div>
-          Mission: To add value to your business, in a true spirit of
-          partnership.
-        </div>
-        <div>
-          Vision: To bring world-class standards to communication strategy and
-          events planning in Nigeria.
-        </div>
-        <div>
-          GDS Events & Marketing Limited is a company focused on the delivery of
-          quality services and provision of exceptional solutions for the
-          realization of each client’s unique marketing needs, ultimately adding
-          value to your business. We specialize in corporate events planning and
-          conference, galas, fashion and trade shows, fund raising coordination,
-          team building activities, board retreats, conventions, seminars, new
-          product launches, theme parties and grand opening celebrations. MSJ
-          Events also provides custom event décor and design, catering,
-          entertainment and marketing for private Individuals, institutions,
-          corporate and Charity Organizations. Our experience and key
-          relationships in the industry enable us to source and invite clients
-          to your events solely based on our recommendations and the strong
-          relationships we have fostered. Our proven success is based on our
-          ability to partner with key suppliers on large projects, bringing
-          together the most talented people to create an unforgettable
-          experience.
+          GSD events started in 2014, with it's company incorporated in 2019, It
+          is a full service events planning company in various number of areas
+          namely:
+          <ul>
+            <li>
+              corporate event e.g meetings, conferences, exhibitions,
+              incentives, product launches, activations, e.t.c
+            </li>
+            <li>
+              Social events such as dinner, wedding, naming ceremony, funerals
+              e.t.c
+            </li>
+          </ul>
+          <div>
+            We strive to be the most reliable and creative event Management
+            Company in Nigeria. We make sure you get the best of service at the
+            most cost effective rate. Our priority is creating a memorable
+            event, in line with our client objectives, thus we take pride in
+            delivering a first class service to all our clients large and small.
+          </div>
+          <div>
+            <h4>Our Vision</h4>
+            <p>
+              Become the Nigeria and African reference of event management
+              excellence.
+            </p>
+          </div>
+          <div>
+            <h4>Our Mission</h4>
+            <p>
+              To provide timely and quality services and building brands with a
+              superior touch of creativity an Innovations.
+            </p>
+          </div>
+          <div>
+            <h4>Our values</h4>
+            <ul>
+              <li>
+                Customer satisfaction – Meeting clients’ expectations by
+                delivering on our promises
+              </li>
+              <li>
+                Integrity – We are honest, truthful, and accurate in our
+                actions.
+              </li>
+              <li>
+                Reliability - we are able to perform and maintain our functions
+                in routine circumstances, as well as hostile in unexpected
+                situation.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     );

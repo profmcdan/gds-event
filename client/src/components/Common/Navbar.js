@@ -1,67 +1,113 @@
-import React from "react";
-// import { Menu } from "semantic-ui-react";
+import React, { Fragment } from "react";
+import { render } from "react-dom";
+import _ from "lodash";
 import {
   Container,
-  Row,
-  Col,
-  Nav,
-  NavDropdown,
-  NavItem,
-  Navbar,
-  NavbarBrand,
-  Form,
-  FormControl,
-  Button
-} from "react-bootstrap";
+  Icon,
+  Image,
+  Menu,
+  Sidebar,
+  Responsive,
+} from "semantic-ui-react";
+
 import logo from "../../logo.svg";
 
-export default class NavBar extends React.Component {
-  state = {};
+const NavBarMobile = ({
+  children,
+  leftItems,
+  onPusherClick,
+  onToggle,
+  rightItems,
+  visible,
+}) => (
+  <Sidebar.Pushable>
+    <Sidebar
+      as={Menu}
+      animation="overlay"
+      icon="labeled"
+      inverted
+      items={leftItems}
+      vertical
+      visible={visible}
+    />
+    <Sidebar.Pusher
+      dimmed={visible}
+      onClick={onPusherClick}
+      style={{ minHeight: "100vh" }}
+    >
+      <Menu fixed="top" inverted>
+        <Menu.Item>
+          <Image size="mini" src={logo} />
+        </Menu.Item>
+        <Menu.Item onClick={onToggle}>
+          <Icon name="sidebar" />
+        </Menu.Item>
+        <Menu.Menu position="right">
+          {_.map(rightItems, item => (
+            <Menu.Item {...item} />
+          ))}
+        </Menu.Menu>
+      </Menu>
+      {children}
+    </Sidebar.Pusher>
+  </Sidebar.Pushable>
+);
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+const NavBarDesktop = ({ leftItems, rightItems }) => (
+  <Menu fixed="top" inverted>
+    <Menu.Item>
+      <Image size="mini" src={logo} />
+    </Menu.Item>
+    {_.map(leftItems, item => (
+      <Menu.Item {...item} href={"/" + item.key} />
+    ))}
+    <Menu.Menu position="right">
+      {_.map(rightItems, item => (
+        <Menu.Item {...item} href={"/" + item.key} />
+      ))}
+    </Menu.Menu>
+  </Menu>
+);
+
+const NavBarChildren = ({ children }) => (
+  <Container style={{ marginTop: "5em" }}>{children}</Container>
+);
+
+export default class NavBar extends React.Component {
+  state = {
+    visible: false,
+  };
+
+  handlePusher = () => {
+    const { visible } = this.state;
+
+    if (visible) this.setState({ visible: false });
+  };
+
+  handleToggle = () => this.setState({ visible: !this.state.visible });
+
   render() {
+    const { children, leftItems, rightItems } = this.props;
+    const { visible } = this.state;
+
     return (
-      <Container>
-        <Navbar
-          collapseOnSelect
-          className="bg-light justify-content-between"
-          expand="lg"
-          fixed="top"
-        >
-          <div className="row main-nav justify-content-between">
-            <Navbar.Brand href="#home">
-              <img
-                alt=""
-                src={logo}
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-              />
-              gds-event
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">Gallery</Nav.Link>
-                <Nav.Link href="#link">Book an Event</Nav.Link>
-                <NavDropdown title="Manage" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.2">
-                    Active Events
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Past Events
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    Reserves
-                  </NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-            </Navbar.Collapse>
-          </div>
-        </Navbar>
-      </Container>
+      <div>
+        <Responsive {...Responsive.onlyMobile}>
+          <NavBarMobile
+            leftItems={leftItems}
+            onPusherClick={this.handlePusher}
+            onToggle={this.handleToggle}
+            rightItems={rightItems}
+            visible={visible}
+          >
+            <NavBarChildren>{children}</NavBarChildren>
+          </NavBarMobile>
+        </Responsive>
+        <Responsive minWidth={Responsive.onlyTablet.minWidth}>
+          <NavBarDesktop leftItems={leftItems} rightItems={rightItems} />
+          <NavBarChildren>{children}</NavBarChildren>
+        </Responsive>
+      </div>
     );
   }
 }
