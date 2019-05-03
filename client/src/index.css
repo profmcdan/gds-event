@@ -8,6 +8,54 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #f1ffff;
 }
+
+.gsd-brand {
+  text-shadow: 4em;
+  text-transform: uppercase;
+  color: rgb(121, 5, 230);
+  transform: rotateY(60deg);
+  transform-style: preserve-3d;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.brand {
+  display: block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  float: none;
+  z-index: auto;
+  position: relative;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  border: none;
+  text-transform: uppercase;
+  -webkit-border-radius: 0 0 4px;
+  border-radius: 0 0 4px;
+  font: normal normal bold 26px Impact, Charcoal, sans-serif;
+  color: rgba(95, 38, 193, 0.5);
+  text-indent: 2px;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  letter-spacing: 2px;
+  white-space: pre-wrap;
+  background: none;
+  -webkit-box-shadow: 2px 4px 6px 3px rgba(95, 38, 193, 0.5);
+  box-shadow: 2px 4px 6px 3px rgba(95, 38, 193, 0.5);
+  text-shadow: 0 0 2px rgba(247, 241, 241, 0.9);
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -webkit-transform: rotateX(-4deg) translateX(5px) skewX(30deg) skewY(-5deg);
+  transform: rotateX(-4deg) translateX(5px) skewX(30deg) skewY(-5deg);
+  -webkit-transform-origin: 39% 29% 0;
+  transform-origin: 39% 29% 0;
+}
+
 .main-nav {
   padding-left: 10%;
   padding-right: 10%;

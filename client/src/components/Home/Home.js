@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Carousel } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import img1 from "../../assets/pexels-photo-1190298.jpeg";
 import img2 from "../../assets/pexels-photo-1304473.jpeg";
 import img3 from "../../assets/pexels-photo-1679825.jpeg";
@@ -10,7 +10,7 @@ import Services from "./Services";
 class Home extends Component {
   render() {
     return (
-      <Container fluid>
+      <div className="container">
         <Carousel>
           <Carousel.Item>
             <img className="d-block nav-img" src={img1} alt="First slide" />
@@ -76,7 +76,7 @@ class Home extends Component {
         </Carousel>
 
         <Services />
-      </Container>
+      </div>
     );
   }
 }

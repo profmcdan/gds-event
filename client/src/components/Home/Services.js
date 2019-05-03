@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Icon } from "semantic-ui-react";
 
 class Services extends Component {
   render() {
@@ -74,10 +73,10 @@ class Services extends Component {
           <div>
             <h4 className="p-up">Contact Us</h4>
             <p>
-              <Icon name="phone square" /> 08164196104
+              <i name="phone square" /> 08164196104
             </p>
             <p>
-              <Icon name="mail square" /> gsdeventz@gmail.com
+              <i name="mail square" /> gsdeventz@gmail.com
             </p>
           </div>
         </div>
