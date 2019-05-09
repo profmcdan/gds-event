@@ -12,7 +12,7 @@ class App extends Component {
       <Router>
         <Navbar />
         <Switch>
-          <div className="container">
+          <div className="container ">
             <Route exact path="/" component={Home} />
           </div>
         </Switch>

@@ -23,6 +23,99 @@
   color: #61dafb;
 }
 
+.image-container {
+  max-width: 1300px;
+  margin: 20px auto 0 auto;
+}
+
+.services-container {
+  max-width: 1300px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.fixed-size-container {
+  max-width: 1000px;
+  margin: 20px auto 0 auto;
+  /* padding: 30px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.fixed-size {
+  width: 200px;
+  height: 150px;
+  background-color: #81d2f1;
+  color: #fff;
+  /* line-height: 100px; */
+  text-align: left;
+  font-weight: bold;
+  /* font-size: 60px; */
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.corporate-event {
+  max-width: 1000px;
+  margin: 30px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.corporate-header {
+  margin: auto;
+}
+
+.corporate-body {
+  margin-top: 20px;
+  display: flex;
+  align-content: space-between;
+}
+
+.category {
+  flex: 1;
+}
+
+.our-approach {
+  max-width: 1000px;
+  margin: 10px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.p-up {
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.approaches {
+  margin-top: 20px;
+  display: flex;
+  flex-basis: 30%;
+  box-sizing: border-box;
+  /* align-content: space-between; */
+}
+.approaches:nth-child(1) {
+  /* background-color: #7fcde0; */
+  flex: 1;
+}
+.approaches:nth-child(2) {
+  /* background-color: #c0dbe2; */
+  flex: 1;
+}
+.approaches:nth-child(3) {
+  /* background-color: #084a5a; */
+  flex: 1;
+}
+
+.services {
+  max-width: 1000px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
